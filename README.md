@@ -32,7 +32,6 @@ This repository relies on [martini](https://github.com/go-martini/martini) for r
   mkdir project_name
   cd project_name
   mkdir src bin pkg
-  cd src
   ```
 
 * Clone this repo
@@ -50,7 +49,6 @@ This repository relies on [martini](https://github.com/go-martini/martini) for r
 * Set GOPATH
 
   ```
-  cd ../
   export GOPATH=`pwd`
   ```
 
