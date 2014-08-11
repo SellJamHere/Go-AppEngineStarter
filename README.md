@@ -1,4 +1,5 @@
-# Golang Starter for Google App Engine
+# Go-AppEngineStarter
+## A Golang Starter for Google App Engine
  
 A little [background](http://blog.golang.org/go-and-google-app-engine) on the Go runtime for App Engine.
 
@@ -9,6 +10,7 @@ Things to note:
 * The source is uploaded to the App Engine and compiled there. (Go is the only compiled language on the App Engine.)
 
 This starter pack is designed to use Golang's idiomatic [workspace structure](http://golang.org/doc/code.html#Workspaces). Go is built on the idea that developers will use many 3rd party libraries. As a result, the program's src directory is divided into many subdirectories, one for each platform a library may reside e.g. github.com, code.google.com, along with a directory for the local source you are writing (In this case, backend).
+
 Normally, only the local source of a go program is included in source control. To facilitate App Engine compatability, however, the entire directory is included in the repository. Because the 3rd party libraries will now lie under source control, we must add their originating src directory to .gitignore (e.g. github.com, code.google.com).
 
 This repository relies on [martini](https://github.com/go-martini/martini) for routing. It is set up with useful default middleware, but can easily be replaced with a router of your choosing.
@@ -37,12 +39,12 @@ This repository relies on [martini](https://github.com/go-martini/martini) for r
   
   If your github account has SSH set up:
   ```
-  git clone git@github.com:SellJamHere/Recruitment_Backend.git src
+  git clone git@github.com:SellJamHere/Go-AppEngineStarter.git src
   ```
 
   Otherwise:
   ```
-  git clone https://github.com/SellJamHere/Recruitment_Backend.git src
+  git clone https://github.com/SellJamHere/Go-AppEngineStarter.git src
   ```
 
 * Set GOPATH
