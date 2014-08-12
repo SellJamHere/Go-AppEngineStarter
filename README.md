@@ -13,7 +13,7 @@ This starter pack is designed to use Golang's idiomatic [workspace structure](ht
 
 Normally, only the local source of a go program is included in source control. To facilitate App Engine compatability, however, the entire directory is included in the repository. Because the 3rd party libraries will now lie under source control, we must add their originating src directory to .gitignore (e.g. github.com, code.google.com).
 
-This repository relies on [martini](https://github.com/go-martini/martini) for routing. It is set up with useful default middleware, but can easily be replaced with a router of your choosing.
+This project relies on [martini](https://github.com/go-martini/martini) for routing. It is set up with useful default middleware, but can easily be replaced with a router of your choosing.
 
 ## Local Build Instructions
 
